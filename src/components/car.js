@@ -11,6 +11,4 @@ function Car(props) {
     );
 };
 
-
-
 export default Car;
