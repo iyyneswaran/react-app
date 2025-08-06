@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- react cdn -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- babel cdn -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- how to use react in html file -->
+     
+    <h1>React in HTML</h1>
+
+    <div id="root">
+
+    </div>
+
+    <script type="text/babel">
+        function helloWorld() {
+            return (
+                <div>
+                    <h1>Hello World!</h1>
+                    <p>This is a simple React application.</p>
+                </div>
+            )
+        };
+        const { createRoot } = ReactDOM;
+        const root = createRoot(document.getElementById('root'));
+        root.render(<helloWorld />);
+    </script>
+
+</body>
+
+</html>

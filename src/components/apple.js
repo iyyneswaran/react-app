@@ -26,6 +26,7 @@ class Apple extends React.Component {
 
         const { appleInfo } = this.props;
         const { type, color } = appleInfo;
+        
         return (
 
             <>
